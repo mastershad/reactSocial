@@ -1,0 +1,34 @@
+.nav{
+  grid-area: n;
+  background: rgb(4, 74, 165);
+  border: 2px solid rgb(30, 105, 204);
+}
+.nav a{
+  color: rgb(186, 197, 137);
+  text-decoration: none;
+}
+.item {
+  border: 2px solid rgb(35, 121, 235);
+  border-radius: 3px;
+  margin-top: 3px;
+  padding: 0 5px;
+}
+.item a:active{
+  color: rgb(61, 236, 228);
+}
+.item:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: center;
+}
+.item .activeLink{
+  align-content: center;
+  color: rgb(37, 223, 99);
+}
+.activeLink div{
+  text-align: center;
+  padding: 5px 10px;
+}
+.settings{
+  margin-top: 40px;
+}
