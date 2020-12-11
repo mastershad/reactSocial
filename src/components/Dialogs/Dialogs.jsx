@@ -8,8 +8,8 @@ const Dialogs = (props) => {
     
     let state = props.dialogsPage;
 
-    let dialogsElement = state.dialogs.map( d => <DialogItem name={d.name} id={d.id}/>);    
-    let massagesElements = state.messages.map( m => <Message message={m.message}/>);
+    let dialogsElement = state.dialogs.map( d => <DialogItem name={d.name} key={d.id} id={d.id}/>);    
+    let massagesElements = state.messages.map( m => <Message message={m.message} key={m.id} />);
     let newMessageBody = state.newMessageBody;
 
     let onSendMessageClick = ()=> {
@@ -39,5 +39,6 @@ const Dialogs = (props) => {
         </div>
     )
 }
+
 
 export default Dialogs;
