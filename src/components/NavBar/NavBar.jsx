@@ -13,7 +13,7 @@ const NavBar = (props) => {
         <NavLink to="/Dialogs" activeClassName={styles.activeLink}><div>Messages</div></NavLink>
       </div>
       <div className={styles.item}>
-        <NavLink to='/users'>Users</NavLink>
+        <NavLink to='/users' activeClassName={styles.activeLink}><div>Users</div></NavLink>
       </div>
       <div className={styles.item}>
         <NavLink to=''>News</NavLink>
